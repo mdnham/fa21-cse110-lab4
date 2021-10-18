@@ -7,7 +7,7 @@ Similar to #2, _finalPrice_ is declared with 'var' and reassigned a value for ev
 4. [50, 100, 150]
 Given the parameters _prices_ and _discount_, the function calculates the reduced value of each entry of the array _prices_ based of the value of _discount_. In our case, since _discount_ = 0.5, every entry of _prices_ will be cut in half; hence the function returns [50, 100, 150].
 5. This will return an error since _i_ was declared with "let", and so it only existed within the for-loop. Hence, line 12 is calling for a variable that does not exist.
-6. Like #5, this will return an error since _discountedPrice_ only exists within the for-loop as it was declared with 'let', so line 13 is calling for a variable that does not exist.
+6. Like #5, this will return an error since _discountedPrice_ only exists within every loop of the for-loop as it was declared with 'let', so line 13 is calling for a variable that does not exist.
 7. 150
 Unlike #5 and #6, _finalPrice_ was declared outside of the for-loop, and so it exists throughout the function block. Similar to #3, _finalPrice_ is still reassigned a value for every loop, and so line 14 is dependent on the final loop, where _i_ = 2. Since the for-loop works exactly the same as the 'var' variant, _finalPrice_ = 150, so line 14 prints out 150.
 8. [50, 100, 150]
